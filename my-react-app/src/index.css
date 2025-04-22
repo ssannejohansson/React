@@ -1,0 +1,17 @@
+.project {
+  display: inline-block;
+  max-width: 400px; 
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px; 
+  text-align: center;
+
+
+
+
+}
+
+.project-img {
+  max-width: 90%;
+}
