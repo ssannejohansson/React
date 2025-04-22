@@ -1,17 +1,16 @@
-import projectPic from '../assets/patagonia.png'
 
 function Project(props) {
+
 return (
-    <div className="project">
-    <h2 className="project-title">{props.title}</h2>
-    <img src={projectPic} alt="project-picture" className="project-img"/>
-    <p className="project-info-title">GitHub Repo:</p>
+    <div className="project-card">
+    <h1 className="project-title">{props.title}</h1>
+    <img src={props.image} alt="project-img" className="project-img"/>
+    <h3 className="project-info-title">GitHub Repo:</h3>
     <p className="project-info">{props.repo}</p>
-    <p className="project-info-title">Tech used:</p>
+    <h3 className="project-info-title">Tech used:</h3>
     <p className="project-info">{props.techUsed}</p>
-    <p className="project-info-title">Additional info:</p>
+    <h3 className="project-info-title">Additional info:</h3>
     <p className="project-info">{props.info}</p>
-  
     </div>
 )
 }

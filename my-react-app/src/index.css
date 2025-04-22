@@ -1,17 +1,34 @@
-.project {
+body {
+  font-family: "Raleway", sans-serif; 
+  display: flex;
+  justify-content: center;
+  background-color: #444444;
+}
+
+.project-card {
   display: inline-block;
   max-width: 400px; 
   width: 100%;
-  border: 1px solid black;
-  padding: 20px;
-  margin: 10px; 
-  text-align: center;
-
-
-
-
+  min-height: 500px; 
+  height: 100%; 
+  background-color: #fff;
+  border-radius: 10px; 
+  box-shadow: 5px 5px 15px black; 
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  
 }
 
+.project-title {
+  text-align: center;
+}
+
+.project-info-title {
+  margin-bottom: -10px;
+}
+
+
 .project-img {
-  max-width: 90%;
+  max-width: 400px;
 }
