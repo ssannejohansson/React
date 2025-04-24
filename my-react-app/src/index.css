@@ -5,6 +5,11 @@ body {
   background-color: #444444;
 }
 
+.home-button {
+  font-size: 20px; 
+  padding: 5px;
+}
+
 .project-card {
   display: inline-block;
   max-width: 400px; 

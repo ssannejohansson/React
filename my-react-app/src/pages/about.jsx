@@ -2,9 +2,12 @@ import Project from '../components/Projects.jsx';
 import patagonia from '../assets/patagonia.png';
 import genesis from '../assets/genesis.png';
 import bhromaon from '../assets/bhromaon.png';
+import Preview from '../components/Preview-btn.jsx';
 
 function About () {
-    return <div><Project 
+    return <div>
+    <Preview></Preview>
+        <Project 
     title="Patagonia" 
     image={patagonia}
     repo="https://github.com/ssannejohansson/uppgift-tolv-responsive.git"
