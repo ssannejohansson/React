@@ -1,33 +1,19 @@
-import Project from './components/Projects.jsx';
-
-import patagonia from './assets/patagonia.png';
-import genesis from './assets/genesis.png';
-import bhromaon from './assets/bhromaon.png';
+import Project from './components/Projects.jsx'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from "./pages/home.jsx";
+import About from "./pages/about.jsx";
 
 function App() {
 
-  return (
-    <>
-    <Project 
-    title="Patagonia" 
-    image={patagonia}
-    repo="https://github.com/ssannejohansson/uppgift-tolv-responsive.git"
-    techUsed="HTML, CSS" 
-    info="This project was a lesson in responsive design where we learned about media queries. This project was a solo-project and the biggest challange was to create a hamburger-menu that would work at mobile-devices."/>
-    <Project 
-    title="Genesis" 
-    image={genesis}
-    repo="https://github.com/ssannejohansson/uppgift-elva-genesis.git" 
-    techUsed="HTML, CSS" 
-    info="This projects was a part of our lessons about grids. It was also the first project containing several pages, so we had to learn how to make the navigation work seamlessly. This was also a solo-project, and my biggest challange was to meet the deadline."/>
-    <Project 
-    title="Bhromaon" 
-    image={bhromaon}
-    repo="https://github.com/ssannejohansson/test.git" 
-    techUsed="HTML, CSS" 
-    info="This project was our first individual 'test' where we had 12 hours to create the design from Figma. I learned how to manage my time and what to prioritize. The biggest challange was to keep calm and accept that I wouldn't be able to meet the deadline."/>
-    </>
-  )
+  return <>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
+  </Routes>
+  </BrowserRouter>
+    </>;
+  
 }
 
-export default App
+export default App;
