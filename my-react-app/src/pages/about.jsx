@@ -2,11 +2,10 @@ import Project from '../components/Projects.jsx';
 import patagonia from '../assets/patagonia.png';
 import genesis from '../assets/genesis.png';
 import bhromaon from '../assets/bhromaon.png';
-import Preview from '../components/Preview-btn.jsx';
+import ShowHideContent from '../components/Preview-btn.jsx';
 
 function About () {
     return <div>
-    <Preview></Preview>
         <Project 
     title="Patagonia" 
     image={patagonia}
@@ -24,7 +23,8 @@ function About () {
     image={bhromaon}
     repo="https://github.com/ssannejohansson/test.git" 
     techUsed="HTML, CSS" 
-    info="This project was our first individual 'test' where we had 12 hours to create the design from Figma. I learned how to manage my time and what to prioritize. The biggest challange was to keep calm and accept that I wouldn't be able to meet the deadline."/></div>
+    info="This project was our first individual 'test' where we had 12 hours to create the design from Figma. I learned how to manage my time and what to prioritize. The biggest challange was to keep calm and accept that I wouldn't be able to meet the deadline."/>
+    </div>
 }
 
 export default About;

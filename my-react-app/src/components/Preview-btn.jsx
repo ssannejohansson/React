@@ -1,17 +1,13 @@
 import {useState} from "react";
 
-function Preview () {
 
-    const [buttonText, setButtonText] = useState('Show Projects'); 
-
-    const onClick = () => {
-        setButtonText (buttonText === "Show Projects" ? "Hide Projects" : "Show Projects");
-    };
-
-return( <div>
-        <button className="preview-button" onClick={onClick}>{buttonText}</button>
-    </div>
-    )
+function ShowHideContent () {
+    const [isVisible, setIsVisible] = useState(false);
+    return (<>
+        <button className="preview-button" onClick={() => setIsVisible(!isVisible)}>
+            {isVisible ? "Hide content" : "Show content"}</button>
+    </>
+    );
 }
 
-export default Preview; 
+export default ShowHideContent; 
