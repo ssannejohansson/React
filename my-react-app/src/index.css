@@ -1,28 +1,34 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif; 
   display: flex;
   justify-content: center;
   background-color: #444444;
 }
 
+/* Navigation */
 .nav-bar {
-  width: 100%; 
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+
 }
 
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 40px;
   padding: 20px;
-  width: 600px; 
-  height: 20px; 
-  background-color: #444444;
-  box-shadow: 0px 8px 24px rgba(29, 30, 30, 0.2);
-  display: flex;
-
+  height: 20px;
+  
 }
 
 li, li a {
@@ -33,28 +39,111 @@ li, li a {
   color: #fff; 
 }
 
-li a:hover {
-  height: 100%; 
-  background-color: green; 
-  color: white;
+ul li a {
+  position: relative;
+}
+
+ul li a, nav ul li a:after, nav ul li a:before {
+  transition: all .5s;
+}
+
+ul li a:after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: "";
+  color: transparent;
+  background: #aaa;
+  height: 1.2px;
+}
+
+ul li a:hover:after {
+  width: 100%;
 }
 
 .nav-devider {
-  color: #fff; 
+  color: #ffffff0e; 
+}
+
+/* Home */
+
+.home-container {
+  margin-top: 30px; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.home-title {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px; 
 }
 
 
+/* About */
 
+.about-container {
+  margin-top: 30px; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px; 
+
+}
+
+.about-text {
+  width: 600px; 
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px; 
+
+}
+
+.preview-button {
+  position: relative; 
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+}
+
+.preview-button:hover {
+  background-color: #b3b1b1;
+}
+
+
+/* Project cards */
+
+.project-container {
+  margin-top: 20px; 
+  display: flex; 
+  flex-wrap: wrap;
+  
+}
 
 .project-card {
-  display: inline-block;
   max-width: 400px; 
   width: 100%;
   min-height: 600px; 
   background-color: #fff;
   border-radius: 10px; 
   box-shadow: 5px 5px 15px black; 
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
   text-align: left;
   
@@ -62,13 +151,32 @@ li a:hover {
 
 .project-title {
   text-align: center;
+  margin: 10px;
 }
 
 .project-info-title {
-  margin-bottom: -10px;
+  margin-top: 10px;
 }
 
 
 .project-img {
   max-width: 400px;
+}
+
+/* Contact */
+
+.contact-container {
+  margin-top: 30px; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px; 
 }

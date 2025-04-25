@@ -3,7 +3,6 @@
 function Project(props) {
 
 return (
-
     <div className="project-card">
     <h1 className="project-title">{props.title}</h1>
     <img src={props.image} alt="project-img" className="project-img"/>
@@ -14,6 +13,7 @@ return (
     <h3 className="project-info-title">Additional info:</h3>
     <p className="project-info">{props.info}</p>
     </div>
+ 
 )
 }
 
