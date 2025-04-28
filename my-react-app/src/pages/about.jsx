@@ -19,7 +19,8 @@ function About () {
         
 
         {toggle ?
-        <container className="project-container"><Project 
+        <container className="project-container">
+            <Project 
     title="Patagonia" 
     image={patagonia}
     repo="https://github.com/ssannejohansson/uppgift-tolv-responsive.git"
