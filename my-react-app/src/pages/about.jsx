@@ -14,9 +14,7 @@ function About () {
 
     return (
     <div className="about-container">
-        <h2 className="about-title"> About</h2>
-        <p className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eos perspiciatis mollitia architecto quibusdam veniam illum enim. Aperiam, officiis eos praesentium eum, veniam delectus, distinctio porro sunt totam illo excepturi.</p>
-        <button className="preview-button" onClick={handleClick}>
+      <button className="preview-button" onClick={handleClick}>
         {buttonText}</button>
         
 
