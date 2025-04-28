@@ -133,19 +133,23 @@ ul li a:hover:after {
   margin-top: 20px; 
   display: flex; 
   flex-wrap: wrap;
+
   
 }
 
 .project-card {
   max-width: 400px; 
   width: 100%;
-  min-height: 600px; 
+  height: 370px;  
   background-color: #fff;
   border-radius: 10px; 
   box-shadow: 5px 5px 15px black; 
   margin: 10px;
-  padding: 10px;
-  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px; 
+  text-align: center;
   
 }
 
@@ -162,6 +166,38 @@ ul li a:hover:after {
 .project-img {
   max-width: 400px;
 }
+
+/* Popup */
+
+.popup-window {
+  position: absolute; 
+  top: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 280px;
+  background-color: #ffffff82;
+  box-shadow: 0 0 20px 0 #00000033;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  padding: 10px; 
+  color: #000;
+}
+
+.pop-button {
+  margin-top: 40px; 
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.pop-button:hover {
+  background-color: #b3b1b1;
+}
+
 
 /* Contact */
 

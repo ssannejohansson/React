@@ -1,21 +1,19 @@
 import React from "react";
-import {useState} from "react";
 
 
-const PopupWindow = ({title, info, techUsed}) => {
  
-    
+
+const PopupWindow = (props) => {
+
     return (
-        <> 
         <div className="popup-window">
-           
-            <h1 className="title">{title}</h1>
+        <h3 className="project-info-title">GitHub Repo:</h3>
+        <p className="project-info">{props.repo}</p>
             <h3 className="project-info-title">Tech used:</h3>
-            <p className="project-info">{techUsed}</p>
+            <p className="project-info">{props.techUsed}</p>
             <h3 className="project-info-title">Additional info:</h3>
-            <p className="project-info">{info}</p>
-            
-        </div></>
+            <p className="project-info">{props.info}</p>
+        </div>
     );
 };
 

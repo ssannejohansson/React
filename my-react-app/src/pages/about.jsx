@@ -16,13 +16,13 @@ function About () {
     <div className="about-container">
       <button className="preview-button" onClick={handleClick}>
         {buttonText}</button>
-        
+    
 
         {toggle ?
         <container className="project-container">
             <Project 
     title="Patagonia" 
-    image={patagonia}
+    image={patagonia} 
     repo="https://github.com/ssannejohansson/uppgift-tolv-responsive.git"
     techUsed="HTML, CSS" 
     info="This project was a lesson in responsive design where we learned about media queries. This project was a solo-project and the biggest challange was to create a hamburger-menu that would work at mobile-devices."/>
