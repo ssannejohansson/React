@@ -1,7 +1,4 @@
 import Project from '../components/Projects.jsx';
-import patagonia from '../assets/patagonia.png';
-import genesis from '../assets/genesis.png';
-import bhromaon from '../assets/bhromaon.png';
 import {useState} from "react";
 
 const projects = [
