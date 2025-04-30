@@ -11,12 +11,12 @@ function Project(props) {
 
     const handleClick = () => {
     setIsOpen(!isOpen) + setButtonText(buttonText === "Show info" ? "Hide info" : "Show info");
-
-
+        
 };
 
 
 return (
+
     <div>
     <div className="project-card">
     <h1 className="project-title">{props.title}</h1>

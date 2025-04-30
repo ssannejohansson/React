@@ -120,22 +120,39 @@ ul li a:hover:after {
   padding: 7px;
   border-radius: 10px;
   border: none;
+  box-shadow: 5px 5px 15px rgb(60, 60, 60); 
 }
 
 .preview-button:hover {
   background-color: #b3b1b1;
 }
 
+.search-bar {
+  font-size: 18px; 
+  padding: 7px; 
+  border-radius: 10px;
+  border: none;
+}
+
+.search-bar:active {
+  outline: none; 
+}
 
 /* Project cards */
 
 .project-container {
   margin-top: 20px; 
   display: flex; 
+  flex-direction: column;
   flex-wrap: wrap;
-
-  
+  align-items: center;
 }
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+}
+
 
 .project-card {
   max-width: 400px; 
