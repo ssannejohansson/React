@@ -43,7 +43,7 @@ function About () {
       
         {toggle ?
             <container className="project-container">
-            <input type="text" className="search-bar" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
+            <input type="text" className="search-bar" placeholder="Search and filter..." value={search} onChange={(e) => setSearch(e.target.value)} />
             </container>    : 
     <></> } 
 

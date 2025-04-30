@@ -128,14 +128,15 @@ ul li a:hover:after {
 }
 
 .search-bar {
-  font-size: 18px; 
+  width: 200px; 
+  font-size: 14px; 
   padding: 7px; 
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
 }
 
-.search-bar:active {
-  outline: none; 
+input[type=text] {
+  outline: none;
 }
 
 /* Project cards */
